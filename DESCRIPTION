@@ -1,0 +1,21 @@
+Package: transformerX
+Title: Transformer Library Helper by SocialX
+Version: 1.1
+Authors@R: 
+    person("First", "Last", , "apriandito@socialx.id", role = c("aut", "cre"))
+Description: Helps reduce pain when working with Transformer library in R
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports:
+    glue,
+    dplyr,
+    tidyr,
+    magrittr,
+    tibble,
+    utils
+Suggests:
+    devtools,
+    reticulate (== 1.31)
+
