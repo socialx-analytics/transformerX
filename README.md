@@ -1,6 +1,6 @@
-# TransformerX
+# transformerX
 
-TransformerX is an R package designed to facilitate the setup and use of the Hugging Face Transformers library. This package provides a convenient interface for leveraging transformer models in your R projects.
+`transformerX` is an R package designed to facilitate the setup and use of the Hugging Face Transformers library. This package provides a convenient interface for leveraging transformer models in your R projects.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ Install the **`devtools`** package if you haven't already:
 install.packages("devtools")
 ```
 
-Install TransformerX from its GitHub repository:
+Install `transformerX` from its GitHub repository:
 
 ```{r}
 devtools::install_github("socialx-analytics/transformerX")
@@ -22,7 +22,7 @@ Check your Python version:
 transformerX::check_python()
 ```
 
-Setup Reticulate (Python integration with R):
+Setup `reticulate` (Python integration with R):
 
 ```{r}
 transformerX::setup_reticulate()
@@ -44,7 +44,7 @@ If the Transformers library is successfully imported, you're ready to go!
 
 ## Example Usage
 
-Here's an example of how to use TransformerX:
+Here's an example of how to use `transformerX`:
 
 ```{r}
 # Load necessary libraries
@@ -53,8 +53,9 @@ library(transformerX)
 
 # Input text
 text <- c(
-  "Feeling sad, not in the mood to eat",
-  "Getting ready for tomorrow morning"
+  "Gak Mood Makan",
+  "Otw Sekolah", 
+  "Makasih Bebeb udah Ditraktir"
 )
 
 # Load a Model
@@ -66,7 +67,7 @@ output <- purrr::map_dfr(
   .x = text,
   .f = apply_zsc,
   model = zs_classifier,
-  candidate_labels = c("Sad", "Happy", "Neutral")
+  candidate_labels = c("Senang", "Sedih", "Netral")
 )
 
 ```
