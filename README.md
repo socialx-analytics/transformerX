@@ -34,7 +34,7 @@ Setup the Python environment:
 transformerX::setup_environment()
 ```
 
-Check if TransformerX can access the transformer library:
+Check if `transformerX` can access the transformer library:
 
 ```{r}
 transformerX::check_transformers()
