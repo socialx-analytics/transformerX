@@ -61,7 +61,6 @@ text <- c(
 # Load a Model
 zs_classifier <- load_zsc_model("ilos-vigil/bigbird-small-indonesian-nli")
 
-
 # Apply the "apply_zsc" function to each element of the "text" vector
 output <- purrr::map_dfr(
   .x = text,
@@ -69,7 +68,6 @@ output <- purrr::map_dfr(
   model = zs_classifier,
   candidate_labels = c("Senang", "Sedih", "Netral")
 )
-
 ```
 
 ## **Support**
