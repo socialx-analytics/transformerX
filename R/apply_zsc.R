@@ -27,12 +27,12 @@ apply_zsc <- function(model, text, candidate_labels) {
     text = text,
     labels = unlist(output$labels),
     score = unlist(output$score)
-  ) %>%
+  ) |>
     tidyr::pivot_wider(
       names_from = "labels",
       values_from = "score"
-    ) %>%
-    dplyr::rowwise() %>%
+    ) |>
+    dplyr::rowwise() |>
     dplyr::mutate(label = names(dplyr::across(-text))[which.max(dplyr::across(-text))])
 
   return(df_output)

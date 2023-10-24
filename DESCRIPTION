@@ -12,10 +12,8 @@ Imports:
     glue,
     dplyr,
     tidyr,
-    magrittr,
     tibble,
     utils
 Suggests:
     devtools,
     reticulate (== 1.31)
-

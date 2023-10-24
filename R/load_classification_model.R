@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' model <- loaf_classification_model("path/to/pretrained/model")
+#' model <- load_classification_model("path/to/pretrained/model")
 #' }
 load_classification_model <- function(model_path) {
   # Import the transformers library using reticulate

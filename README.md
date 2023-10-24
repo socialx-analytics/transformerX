@@ -44,7 +44,7 @@ If the Transformers library is successfully imported, you're ready to go!
 
 ## Example Usage
 
-Here's an example of how to use `transformerX`:
+Here's an example of how to use `transformerX` for Zero Shoot Classification:
 
 ```{r}
 # Load necessary libraries

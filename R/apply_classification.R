@@ -20,7 +20,7 @@ apply_classification <- function(model, text) {
   outputs <- model(text)
 
   # Bind the rows of the output together into a single data frame
-  results <- outputs %>%
+  results <- outputs |>
     dplyr::bind_rows()
 
   return(results)
