@@ -18,7 +18,7 @@
 apply_ner <- function(model, text) {
 
   # Apply the model to the input text
-  output <- bind_rows(model(text))
+  output <- dplyr::bind_rows(model(text))
 
   # Convert the output to a tidy data frame
   df_output <- fix_ner_result(output)
