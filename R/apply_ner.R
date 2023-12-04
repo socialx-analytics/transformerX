@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' model <- some_pretrained_ner_model()
+#' model <- load_ner_model("https://huggingface.co/dslim/bert-base-NER")
 #' texts <- c("John lives in New York.", "Alice works at Apple.")
 #' apply_ner(model, texts)
 #' }

@@ -1,9 +1,9 @@
 Package: transformerX
 Title: Transformer Library Helper by SocialX
-Version: 1.1
+Version: 1.2
 Authors@R: 
-    person("First", "Last", , "apriandito@socialx.id", role = c("aut", "cre"))
-Description: Helps reduce pain when working with Transformer library in R
+    person("Muhammad Apriandito Arya", "Saputra", , "apriandito@socialx.id", role = c("aut", "cre"))
+Description: Simplifies when working with Transformer Models (Huggingface)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

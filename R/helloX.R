@@ -15,7 +15,7 @@ helloX <- function() {
   # Display the welcome message
   message(
     "Hi! Welcome to transformerX. ",
-    "Note: This package is currently in the development stage. ",
+    "Note: This package is currently in the development stage by SocialX Team",
     "I hope you can enjoy it, and if you encounter any bugs or issues, ",
     "please don't hesitate to raise an issue."
   )

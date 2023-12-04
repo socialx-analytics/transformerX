@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' model <- load_ner_model("path/to/pretrained/model")
+#' model <- load_ner_model("https://huggingface.co/dslim/bert-base-NER")
 #' }
 load_ner_model <- function(model_path) {
   # Import the transformers library using reticulate

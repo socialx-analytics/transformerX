@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' model <- some_pretrained_model()
+#' model <- load_ner_model("lxyuan/distilbert-base-multilingual-cased-sentiments-student")
 #' text <- c("This is a test.", "Another sample text.")
 #' apply_classification(model, text)
 #' }

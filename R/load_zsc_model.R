@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' zsc_model <- load_zsc_model("path/to/pretrained/model")
+#' model <- load_zsc_model("MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")
 #' }
 load_zsc_model <- function(model_path) {
   # Import the transformers library using reticulate
