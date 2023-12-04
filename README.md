@@ -40,7 +40,7 @@ for (package in requirements) {
 
 # Setting the conda environment to 'bert'
 # Ensure to change this to the name of your created environment if different
-reticulate::use_condaenv("bert")
+reticulate::use_condaenv("llm")
 
 # Checking if the transformers are correctly installed and configured
 transformerX::check_transformers()
