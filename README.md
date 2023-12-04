@@ -29,11 +29,11 @@ reticulate::install_miniconda()
 conda_create("llm")
 
 # Defining the required packages for the environment
-requirements <- c("pytorch", "transformers", "huggingface-hub")
+requirements <- c("pytorch", "transformers", "huggingface_hub")
 
 # Installing each package in the 'llm' environment
 for (package in requirements) {
-  reticulate::conda_install("llm", package)
+  reticulate::conda_install("llm", package, channel = c("conda-forge", "pytorch", "huggingface"))
 }
 
 # Note: Restart your R session after running this script for changes to take effect
