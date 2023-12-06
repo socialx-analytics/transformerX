@@ -18,6 +18,6 @@ It initializes a zero-shot classification pipeline using a pre-trained model loc
 }
 \examples{
 \dontrun{
-zsc_model <- load_zsc_model("path/to/pretrained/model")
+model <- load_zsc_model("MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")
 }
 }

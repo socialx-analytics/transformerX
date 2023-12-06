@@ -18,6 +18,6 @@ It takes a model path as an argument and initializes the model and tokenizer fro
 }
 \examples{
 \dontrun{
-model <- load_ner_model("path/to/pretrained/model")
+model <- load_ner_model("https://huggingface.co/dslim/bert-base-NER")
 }
 }

@@ -2,7 +2,7 @@ Package: transformerX
 Title: Transformer Library Helper by SocialX
 Version: 1.2
 Authors@R: 
-    person("Muhammad Apriandito Arya", "Saputra", , "apriandito@socialx.id", role = c("aut", "cre"))
+    person("Muhammad Apriandito Arya", "Saputra", ,"apriandito@socialx.id", role = c("aut", "cre"))
 Description: Simplifies when working with Transformer Models (Huggingface)
 License: MIT + file LICENSE
 Encoding: UTF-8

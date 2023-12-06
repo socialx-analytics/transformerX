@@ -1,35 +1,44 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # transformerX <img src="man/figures/logo.png" align="right" height="138" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-transformerX helps you to work with the Transformer models available in
-Huggingface.
+transformerX helps you to work with the Transformer models available in Huggingface.
 
 ## Getting Started
 
-Install the **`devtools`** package if you haven’t already:
+Install the **`devtools`** package if you haven't already:
 
-``` r
+```{r eval=FALSE, include=TRUE}
 install.packages("devtools")
 ```
 
 Install `transformerX` from its GitHub repository:
 
-``` r
+```{r eval=FALSE, include=TRUE}
 devtools::install_github("socialx-analytics/transformerX")
 ```
 
 ## Setup Transformer
 
-There are several ways to setup Transformer models. You can choose to
-use the base Python or the Anaconda distribution. The simplest way is to
-use Miniconda which can be installed directly from Reticulate.
+There are several ways to setup Transformer models. You can choose to use the base Python or the Anaconda distribution. The simplest way is to use Miniconda which can be installed directly from Reticulate.
 
-``` r
+```{r eval=FALSE, include=TRUE}
 # Installing Miniconda using reticulate
 reticulate::install_miniconda()
 
@@ -55,15 +64,13 @@ reticulate::use_condaenv("llm")
 transformerX::check_transformers()
 ```
 
-If the Transformers library is successfully imported, you’re ready to
-go!
+If the Transformers library is successfully imported, you're ready to go!
 
 ## Example Usage
 
-Here’s an example of how to use `transformerX` for Zero Shoot
-Classification:
+Here's an example of how to use `transformerX` for Zero Shoot Classification:
 
-``` r
+```{r eval=FALSE, include=TRUE}
 # Load necessary libraries
 library(purrr) 
 library(transformerX)  
@@ -89,6 +96,5 @@ output <- purrr::map_dfr(
 
 ## **Support**
 
-For any questions, issues, or feedback, please [**open an
-issue**](https://github.com/socialx-analytics/transformerX/issues) on
-our GitHub repository.
+For any questions, issues, or feedback, please [**open an issue**](https://github.com/socialx-analytics/transformerX/issues) on our GitHub repository.
+

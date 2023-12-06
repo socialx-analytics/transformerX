@@ -23,9 +23,9 @@ with the highest score for each text.
 }
 \examples{
 \dontrun{
-model <- some_pretrained_model()
-texts <- c("This is a test.", "Another sample text.")
+model <- load_zsc_model("MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")
+text <- "This is a test."
 labels <- c("Label1", "Label2", "Label3")
-apply_zero_shoot(model, texts, labels)
+apply_zsc(model, text, labels)
 }
 }
