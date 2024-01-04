@@ -35,7 +35,7 @@ reticulate::install_miniconda()
 
 # Creating a new conda environment named 'llm'
 # Feel free to adjust the environment name as needed
-conda_create("llm")
+reticulate::conda_create("llm")
 
 # Defining the required packages for the environment
 requirements <- c("pytorch", "transformers", "huggingface_hub")
